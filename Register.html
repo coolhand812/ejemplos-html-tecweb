@@ -8,9 +8,9 @@
         <form method="GET">
 
             <label for="first-name">First name:</label>
-            <input type="text" name="first-name" id="first-name">
+            <input type="text" name="first-name" id="first-name" placeholder="your first name">
             <label for="last-name">Last Name:</label>
-            <input type="text" name="last-name" id="last-name">
+            <input type="text" name="last-name" id="last-name" placeholder="your last name">
             
             <div>   
                 <label for="Male">Male</label>
@@ -23,12 +23,59 @@
 
             <div>
                 <label for="email">Email:</label>
-                <input type="email" id="email">
+                <input type="email" id="email" placeholder="your e-mail">
 
                 <label for="password">Password:</label>
-                <input type="password" name="password" id="password">
+                <input type="password" name="password" id="password" required placeholder="At least 8 characters" minlength="8">
             </div>
 
+            <div>
+                <label>Birthday:</label>
+                <select name="month">
+                    <option>Month</option>
+                    <option>---</option>
+                    <option value="1">Jan</option>
+                    <option value="2">Feb</option>
+                    <option>Mar</option>
+                    <option>Apr</option>
+                    <option>May</option>
+                    <option>Jun</option>
+                    <option>Jul</option>
+                    <option>Aug</option>
+                    <option>Sep</option>
+                    <option>Oct</option>
+                    <option>Nov</option>
+                    <option>Dec</option>
+                </select>
+                <select name="day">
+                    <option>day</option>
+                    <option>---</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>...</option>
+                </select>
+                <select name="year">
+                    <option>year</option>
+                    <option>---</option>
+                    <option>2012</option>
+                    <option>2013</option>
+                    <option>2014</option>
+                    <option>2015</option>
+                    <option>2016</option>
+                    <option>2017</option>
+                    <option>2018</option>
+                    <option>2019</option>
+                </select>
+            </div>
+            <label for="terms-conditions">
+                I agree to the terms and conditions
+            </label>
+            <input id="terms-conditions" type="checkbox" required>
+            <p>* This field is required</p>
                 <!--send button-->
                 <input type="submit" value="submit">
 
